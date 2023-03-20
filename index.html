@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PNC BANK</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+<body>
+  <div class="phone">
+    <div class="phone-camera"></div>
+    <div class="phone-speaker"></div>
+    <div class="phone-screen">
+      <div class="box_1">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+              aria-controls="nav-home" aria-selected="false"><img src="./images/PNClogo.svg.png" width="90px"
+                alt=""></a>
+
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+              aria-controls="nav-profile" aria-selected="true"><img src="./images/money (1).png" width="60px"
+                alt=""></a>
+
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+              aria-controls="nav-contact" aria-selected="false"><img src="./images/money-transfer.png" width="60px"
+                alt=""></a>
+
+            <a class="nav-item nav-link" id="nav-money-tab" data-toggle="tab" href="#nav-moneyy" role="tab"
+              aria-controls="nav-money-tab" aria-selected="false"><img src="./images/invoice.png" width="60px"
+                alt=""></a>
+            <a class="nav-item nav-link" id="nav-money-tab" data-toggle="tab" href="#nav-money" role="tab"
+              aria-controls="nav-money-tab" aria-selected="false"><img src="./images/user.png" width="60px" alt=""></a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <img class="pnc_img" src="./images/PNClogo.svg.png" alt="">
+            <h3 class="pnc-text">Welcome PNC BANK</h3>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="wrapperr">
+
+
+            </div>
+            <div class="text_money">
+              Varlıklarınız
+            </div>
+            <div class="circle">
+              <div class="pie small"></div>
+              <div class="pie big"></div>
+              <div class="circle__inner"></div>
+              <span id="price_bank">50</span>
+              <!-- <span class="tl_icons">TL</span> -->
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <input type="number" id="price_transfer" />
+            <h3 style="margin-top: 90px;margin-left: 90px;">İban Number Entry</h3>
+            <div class="amount">
+
+
+            </div>
+            <div class="ibann">
+              <label for="iban">TR</label>
+              <input id="name_iban" type="text" name="iban" class="box_style" />
+              <h1 id="name"> </h1>
+            </div>
+            <div class="send__btn">
+              <button onclick="myFunctionn()" class="sent_btn" id="sent_btnn">
+                <span id="sent_icons" class="material-symbols-outlined">
+                  send
+                </span>
+              </button>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="nav-moneyy" role="tabpanel" aria-labelledby="nav-money-tab">
+            <div class="phone_bill">
+              <img src="./images/phone.png" width="60px" alt="">
+              <input type="text" id="phone" class="phone_css" />
+            </div>
+            <h1 id="phone_name"></h1>
+            <div class="electiric">
+              <img src="./images/flash.png" width="60px" alt="" srcset="">
+              <input type="text" id="flash" class="flash_css" />
+            </div>
+            <h1 id="flash_name"></h1>
+
+          </div>
+          <div class="tab-pane fade" id="nav-money" role="tabpanel" aria-labelledby="nav-money-tab">
+
+            <img src="./images/Ekran Alıntısı.PNG" alt="" srcset="" class="user_login_img">
+            <h5 class="name_box_login">Mustafa Karaçuha</h5>
+            <div class="hello_btn">
+              <!-- The text field -->
+              <h6 class="hello_input" id="myInput">2222 2222 2221 2700 1550 0</h6>
+              <!-- The button used to copy the text -->
+              <button class="copy_btn" onclick="myFunction()">
+                <span class="material-symbols-outlined" style="font-size: 14px;" id="time">
+                  content_copy
+                </span>
+                <span style="color:black; font-size: 10px;" id="copied"></span>
+
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="phone-reflection"></div>
+    </div>
+    <div class="phone-button"></div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
